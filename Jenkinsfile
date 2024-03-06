@@ -18,7 +18,7 @@ pipeline {
             steps {
                 echo 'Git Clone'
                 git url: 'https://github.com/twigim2/spring-petclinic.git',
-                branch: 'wavefront'
+                branch: 'wavefront', credentialsID: 'github_access_token'
             }
             post {
                 success {
