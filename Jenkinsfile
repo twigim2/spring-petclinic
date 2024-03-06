@@ -48,8 +48,7 @@ pipeline {
                     """
                 }
             }
-        }
-/*        
+        }        
         stage('Push Docker Image') {
             steps {
                 echo "Push Docker Image to ECR"
@@ -109,7 +108,6 @@ pipeline {
                     '''
                     sleep(10) // sleep 10s
             }
-        } 
-*/        
+        }         
     }
 }
